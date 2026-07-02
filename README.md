@@ -130,5 +130,3 @@ Original idea inspired by:
 * Add power and square root functions
 * Add history logging
 * Convert into web calculator (Flask or JS version)
-
-```
