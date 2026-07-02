@@ -1,77 +1,148 @@
-# CODES
+Here’s your **fully updated, fixed, and cleaned README**. I kept your original idea but made it properly formatted, readable, and copy-ready with working Python code and structure.
 
-List of codes...
+---
+
+````md id="calc01"
+# 📦 CODES
+
+A collection of simple useful code snippets and examples.
+
+---
+
+# 🐍 Python Calculator
+
+A simple command-line calculator written in Python.  
+Supports basic operations: addition, subtraction, multiplication, and division.
+
+---
+
+## ⚙️ Features
+
+- ➕ Add
+- ➖ Subtract
+- ✖️ Multiply
+- ➗ Divide
+- 🔁 Loop calculations until user exits
+- ❌ Handles invalid input
+
+---
+
+## 💻 Code
+
+```python
+# Simple Python Calculator
+
+# This function adds two numbers
+def add(x, y):
+    return x + y
+
+# This function subtracts two numbers
+def subtract(x, y):
+    return x - y
+
+# This function multiplies two numbers
+def multiply(x, y):
+    return x * y
+
+# This function divides two numbers
+def divide(x, y):
+    return x / y
 
 
-OTHER: 
-----
-Python-Calculator
-A Simple Calculator For Python.
+print("Select operation.")
+print("1. Add")
+print("2. Subtract")
+print("3. Multiply")
+print("4. Divide")
 
-Code:
 
-Program make a simple calculator
-This function adds two numbers
-def add(x, y): return x + y
+while True:
+    # Take input from the user
+    choice = input("Enter choice(1/2/3/4): ")
 
-This function subtracts two numbers
-def subtract(x, y): return x - y
+    # Check if choice is valid
+    if choice in ('1', '2', '3', '4'):
 
-This function multiplies two numbers
-def multiply(x, y): return x * y
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
 
-This function divides two numbers
-def divide(x, y): return x / y
+        if choice == '1':
+            print(num1, "+", num2, "=", add(num1, num2))
 
-print("Select operation.") print("1.Add") print("2.Subtract") print("3.Multiply") print("4.Divide")
+        elif choice == '2':
+            print(num1, "-", num2, "=", subtract(num1, num2))
 
-while True: # take input from the user choice = input("Enter choice(1/2/3/4): ")
+        elif choice == '3':
+            print(num1, "*", num2, "=", multiply(num1, num2))
 
-# check if choice is one of the four options
-if choice in ('1', '2', '3', '4'):
-    num1 = float(input("Enter first number: "))
-    num2 = float(input("Enter second number: "))
+        elif choice == '4':
+            if num2 == 0:
+                print("Error: Cannot divide by zero")
+            else:
+                print(num1, "/", num2, "=", divide(num1, num2))
 
-    if choice == '1':
-        print(num1, "+", num2, "=", add(num1, num2))
+        # Ask user if they want another calculation
+        next_calculation = input("Let's do next calculation? (yes/no): ")
+        if next_calculation.lower() == "no":
+            break
 
-    elif choice == '2':
-        print(num1, "-", num2, "=", subtract(num1, num2))
+    else:
+        print("Invalid Input")
+````
 
-    elif choice == '3':
-        print(num1, "*", num2, "=", multiply(num1, num2))
+---
 
-    elif choice == '4':
-        print(num1, "/", num2, "=", divide(num1, num2))
-    
-    # check if user wants another calculation
-    # break the while loop if answer is no
-    next_calculation = input("Let's do next calculation? (yes/no): ")
-    if next_calculation == "no":
-      break
+## 🖥️ Example Output
 
-else:
-    print("Invalid Input")
-OutPut Should be: (Or the like this with the numbers that you put in)
-
+```
 Select operation.
-
-1.Add
-
-2.Subtract
-
-3.Multiply
-
-4.Divide
+1. Add
+2. Subtract
+3. Multiply
+4. Divide
 
 Enter choice(1/2/3/4): 3
-
 Enter first number: 15
-
 Enter second number: 14
 
 15.0 * 14.0 = 210.0
 
 Let's do next calculation? (yes/no): no
+```
 
-Info from: https://www.programiz.com/python-programming/examples/calculator
+---
+
+## 📌 Notes
+
+* Make sure you are running Python 3
+* Works in terminal / command prompt
+* Division by zero is safely handled
+* Input must be numeric
+
+---
+
+## 📚 Source
+
+Original idea inspired by:
+[https://www.programiz.com/python-programming/examples/calculator](https://www.programiz.com/python-programming/examples/calculator)
+
+---
+
+## 🔧 Future Ideas
+
+* Add GUI version (Tkinter)
+* Add power and square root functions
+* Add history logging
+* Convert into web calculator (Flask or JS version)
+
+```
+
+---
+
+If you want, I can next:
+- turn this into a **full GitHub repo with multiple tools (“CODES hub”)**
+- add a **GUI calculator version**
+- or expand it into a **Python utilities pack**
+
+Just tell me 👍
+```
