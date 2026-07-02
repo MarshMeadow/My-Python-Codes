@@ -1,7 +1,3 @@
-Here’s your **fully updated, fixed, and cleaned README**. I kept your original idea but made it properly formatted, readable, and copy-ready with working Python code and structure.
-
----
-
 ````md id="calc01"
 # 📦 CODES
 
@@ -135,14 +131,4 @@ Original idea inspired by:
 * Add history logging
 * Convert into web calculator (Flask or JS version)
 
-```
-
----
-
-If you want, I can next:
-- turn this into a **full GitHub repo with multiple tools (“CODES hub”)**
-- add a **GUI calculator version**
-- or expand it into a **Python utilities pack**
-
-Just tell me 👍
 ```
